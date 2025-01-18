@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
+import jobListData from "../Data/jobListData";
 
 
 
@@ -20,34 +21,25 @@ const Filter = (props) => {
     
       const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFilters({ ...filters, [name]: value });
+    
+        setFilters((prevFilters) => ({
+          ...prevFilters,
+          [name]: value,
+        }));
+
+        props.list(jobData)
       };
 
-      const getData = (e)=>
-        {
-            setFilters({
-              keyword: e.target.value
-            })
-            props.list(jobData)
-            
-        }
-
-      const getLocation = (e)=>
-        {
-           setFilters({
-            location:e.target.value
-           })
-           
-           
-        }  
-
       
-          let jobData = store.filter((list) =>
+          let jobData = jobListData.filter((list) =>
           {
 
-            return  list.title.toLowerCase().includes(filters.keyword) || list.company.toLowerCase().includes(filters.keyword)
+            return  list.title.toLowerCase().includes(filters.keyword)  && list.location.toLowerCase().includes(filters.location)
                  
           })
+
+          console.log(jobData)
+          
 
          
   
@@ -63,8 +55,9 @@ const Filter = (props) => {
           <input
             type="text"
             name="keyword"
-            placeholder="Job Title or Keyword"
-            onChange={getData}
+            placeholder="Job Title or Keyword"       
+            value={filters.keyword}
+            onChange={handleInputChange}
           />
           <FaSearch className="icon" />
         </div>
@@ -78,7 +71,7 @@ const Filter = (props) => {
             name="location"
             placeholder="Search location"
             value={filters.location}
-            onChange={getLocation}
+            onChange={handleInputChange}
           />
           <FaMapMarkerAlt className="icon" />
         </div>
@@ -108,7 +101,7 @@ const Filter = (props) => {
 
    
 
-      <button className="filter-btn">Search</button>
+      <button className="filter-btn" >Search</button>
     </div>
     </>
   )

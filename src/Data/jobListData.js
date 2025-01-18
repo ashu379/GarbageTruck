@@ -108,7 +108,27 @@ const jobListData = [
     location: "Ghaziabad",
     experience: "2-4 years",
     image: "https://picsum.photos/200?random=10",
-  }
+  },
+  {
+    id: 12,
+    title: "Frontend Developer",
+    company: "TechWave Solutions",
+    type: "Full-Time",
+    salary: "₹70,000 per month",
+    location: "Ghaziabad",
+    experience: "2-4 years",
+    image: "https://picsum.photos/200?random=1",
+  },
+  {
+    id: 13,
+    title: "Backend Developer",
+    company: "CodeCraft Inc.",
+    type: "Internship",
+    salary: "₹35,000 per month",
+    location: "delhi",
+    experience: "0-1 year",
+    image: "https://picsum.photos/200?random=2",
+  },
 ];
 
 export default jobListData;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Filter from "../CandidateComponents/Filter";
 import jobListData from "../Data/jobListData";
 
@@ -7,9 +7,7 @@ const SearchJob = () => {
 
   const [store, setStore] = useState(jobListData)
 
-  useEffect(()=>{
-    !store && setStore(jobListData);
-  },[])
+
 
   return (
     <>
@@ -23,8 +21,7 @@ const SearchJob = () => {
         <Filter list={setStore} jobList={store}/>
         <div className="SearchJob_right">
          
-       
-      {/* this my code */}
+     
          
          {store.map((list)=>
         {
