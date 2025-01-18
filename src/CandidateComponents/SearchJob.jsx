@@ -24,7 +24,7 @@ const SearchJob = () => {
         <div className="SearchJob_right">
          
        
-
+      {/* this my code */}
          
          {store.map((list)=>
         {
