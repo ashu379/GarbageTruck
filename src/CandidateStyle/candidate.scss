@@ -1,0 +1,125 @@
+@import "colors";
+
+.sidebar_container {
+  width: 35%;
+  top: 0;
+}
+
+.mobile_screen {
+  display: none;
+}
+
+.candidate_container {
+  > h2 {
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.candidate_main {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding: 2em;
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+
+  > .header_child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.right_side::-webkit-scrollbar
+{
+   display: none;
+}
+
+.right_side {
+  width: 55rem;
+  margin-left: 1em;
+  left: 36%;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  height: auto;
+  overflow-x: auto; /* Enable scrolling for this area */
+  scroll-behavior: smooth;
+  padding: 1em
+}
+
+// Mobile (Small devices, 0px and up)
+@media (max-width: 575.98px) {
+  // Your mobile styles here
+
+  .right_side {
+    position: static;
+    display: block;
+    width: 95%;
+    margin: auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 1em;
+    height: auto;
+  }
+
+  .candidate_main {
+    width: 95%;
+    flex-wrap: wrap;
+  }
+}
+
+// Tablet (Medium devices, 576px and up)
+@media (min-width: 576px) and (max-width: 769.98px) {
+  // Your tablet styles here
+
+  .candidate_main {
+    width: 95%;
+    flex-wrap: wrap;
+  }
+
+  .right_side {
+    position: static;
+    display: block;
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 1em;
+    height: auto;
+    margin-top: 1em;
+  }
+}
+
+// Small Desktop (Large devices, 768px and up)
+@media (min-width: 769px) and (max-width: 997px) {
+  // Your small desktop styles here
+  .candidate_main {
+    flex-wrap: wrap;
+  }
+
+  .right_side {
+    position: static;
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+  }
+}
+
+
+
+// Large Desktop (XXL devices, 1200px and up)
+@media (min-width: 1200px) {
+  // Your large desktop styles here
+}

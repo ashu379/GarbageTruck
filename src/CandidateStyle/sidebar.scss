@@ -1,0 +1,190 @@
+// Sidebar.scss
+@import 'colors';
+
+.active-link li
+{
+  background-color: $first;
+  border-radius: 10px;
+  transition-duration:0.65s;
+  color: $third
+}
+
+
+.sidebar {
+    width: 18%;
+    background-color:$forth;
+    color: $first;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    border-radius: 10px;
+    outline: none;
+    padding: 1em;
+    position: sticky;
+    top: 2rem;
+
+    &__nav {
+      margin-top: 20px;
+  
+      ul {
+        list-style: none;
+        padding: 0;
+
+        a {
+          color: $first;
+          text-decoration: none;
+          padding: 10px 4px;
+          display: block;
+          font-size: 0.875rem;
+          transition: all;
+
+           
+
+          &:hover
+          {
+            color: $third;
+          }
+  
+       
+        }
+
+        li {
+          margin-top: 1em;
+          display: flex;
+          align-items: center;
+          justify-content:flex-start;
+          padding-left: 0.75em;
+          padding-right: 1em;
+          box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.819);
+          border-radius: 10px;
+          outline: none;
+          padding-top: 0.65em;
+          padding-bottom: 0.65em;
+
+         
+  
+          &:hover {
+            background-color: $first;
+            border-radius: 10px;
+            transition-duration:0.65s;
+            color: $third
+          }
+    
+      
+        }
+
+
+      }
+  
+ 
+    }
+  }
+
+  .icons
+  {
+    color: $third;
+    font-size: 1.2rem;
+  }
+
+  .sidebar_header_section 
+  {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+
+    >h3
+    {
+      font-weight: 400;
+      color: $first;
+      font-size: 1.125rem;
+    }
+  }
+
+
+
+  // Mobile (Small devices, 0px and up)
+  @media (max-width: 575.98px) {
+    // Your mobile styles here
+
+    ul
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: center;
+    
+    a 
+    {
+      width: 95%;
+    }
+
+  }
+
+    .sidebar
+    {
+       display: block;
+       width: 95%;
+       position: static;
+       margin: auto;
+    }
+
+}
+
+// Tablet (Medium devices, 576px and up)
+@media (min-width: 576px) and (max-width: 769.98px) {
+  // Your tablet styles here
+
+  ul
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  
+  a 
+  {
+    width: 95%;
+  }
+
+}
+
+.sidebar
+{
+   display: block;
+   width: 80%;
+   position: static;
+   margin: auto;
+   height: auto;
+}
+
+}
+
+// Small Desktop (Large devices, 768px and up)
+@media screen and (min-width: 769px) and (max-width: 997px) {
+  // Your small desktop styles here
+
+  .sidebar
+{
+   display: block;
+   width: 90%;
+   position: static;
+   margin: 1em;
+   height: auto;
+}
+
+  ul
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  
+  a 
+  {
+    width: 95%;
+  }
+
+}
+
+
+}

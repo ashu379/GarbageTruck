@@ -1,0 +1,57 @@
+@import "colors";
+
+.login_btn {
+  background-color: $third;
+  color: $first;
+  border-radius: 10px;
+  border: 1px solid $third;
+}
+
+#login_button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; // spacing between buttons
+
+  .auth-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    .icon {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+    &.facebook {
+      background-color: #1877f2;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        background-color: $forth;
+      }
+    }
+
+    &.google {
+      background-color: #fff;
+      color: #555;
+      border: 1px solid #ddd;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}

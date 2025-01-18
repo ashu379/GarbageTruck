@@ -1,0 +1,185 @@
+@import 'colors';
+
+.form-container {
+    width: 100%;
+    margin: auto;
+    padding: 1.6rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+  
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .form-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            width: 100%;
+
+           
+
+            >span
+            {
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+
+            input
+            {
+               height: 4vh;
+            }
+         
+
+            input, textarea {
+                margin-left: 1em;
+                flex: 1;
+                padding: 1.2rem;
+                border-radius: 10px;
+                font-size: 1rem;
+                width: 100%;
+            }
+
+            textarea {
+                resize: vertical;
+            }
+
+            &.full-width {
+                margin-left: 1em;
+                width: 97.5%;
+            }
+        }
+
+        button {
+            width: 40%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: $third;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 2em;
+        }
+    }
+}
+
+/* From Uiverse.io by ercnersoy */ 
+.input {
+
+    position: relative;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+   }
+   
+   .input:focus {
+    outline-color: $third;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+
+   @media (max-width: 575.98px) {
+    // Your mobile styles here
+   
+    .form-container 
+    {
+
+         width: 100%;
+         padding: 1rem;
+
+         form
+         {
+            display: flex;
+            flex-direction: column;
+         
+            .form-row 
+            {
+                display: flex;
+                flex-direction: column;
+
+                span
+                {
+                    width: 100%;
+                }
+
+                textarea
+                {
+                    width: 90%;
+                }
+               
+         }
+
+         button
+                {
+                    width: 50%;
+                    font-size: 0.65rem;
+                }
+       
+
+    }
+ 
+}
+}  
+
+// Tablet (Medium devices, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    // Your tablet styles here
+
+    .form-container 
+    {
+
+         width: 100%;
+         padding: 1rem;
+
+         form
+         {
+            display: flex;
+            flex-direction: column;
+         
+            .form-row 
+            {
+                display: flex;
+                flex-direction: column;
+
+                span
+                {
+                    width: 100%;
+                }
+
+                textarea
+                {
+                    width: 96%;
+                }
+               
+         }
+
+         button
+                {
+                    width: 50%;
+                    font-size: 0.65rem;
+                }
+       
+
+    }
+ 
+}
+
+}   
+
+

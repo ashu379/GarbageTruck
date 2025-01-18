@@ -1,0 +1,26 @@
+
+
+.post_job_form_container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.65em;
+
+    .input-container
+    {
+        padding-left: 1em;
+        width: 90%;
+    }
+}
+
+.postjobform_row1
+{
+    display: flex;
+    margin: 1em;
+}
+
+.post_formbox
+{
+    width: 32%;
+}

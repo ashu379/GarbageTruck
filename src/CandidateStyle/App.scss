@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import "colors";
+/* The following line can be included in a src/App.scss */
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $first;
+}
+
+/* From Uiverse.io by mrhyddenn */
+.click {
+  background: #fff;
+  border: none;
+  display: inline-block;
+  transform: skew(0deg);
+  transition: all 1s;
+}
+
+span {
+  display: inline-block;
+  position: relative;
+  right: 0.65em;
+  transform: skew(0deg);
+}
+
+.click::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: black;
+  opacity: 0;
+  z-index: -1;
+  transition: all 1s;
+  border-radius: 30px;
+}
+
+.click:hover {
+  color: #fff;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.click:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.dashboard_container {
+  height: 60.5rem;
+}

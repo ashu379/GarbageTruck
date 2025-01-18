@@ -1,0 +1,240 @@
+.job_search_grand_container
+{
+  width: 60%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 0.75em;
+  border-radius: 40px;
+}
+
+.job-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    max-width: 100%;
+    background-color: #ffffff;
+    height: 9vh;
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px  black;
+    padding: 0.75em;
+}
+
+
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input[type="text"] 
+{
+    padding: 0.65em;
+    font-size: 1rem;
+    flex: 1;
+    width: 28%;
+    border-radius: 40px;
+    border: none;
+}
+
+
+
+button.search-btn {
+    border-radius: 60px;
+    padding: 0.1em 1.1em;
+    font-size: 1rem;
+    letter-spacing: normal;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 2px solid var(--primary-color);
+}
+
+
+button.search-btn:hover {
+    background-color: #89A831;
+    border: 2px solid #89A831;
+}
+
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.job-card {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+select {
+    word-wrap: normal;
+    /* border-left: #000000; */
+    border: none;
+    /* border-left: #df8918; */
+    font-size: 1rem;
+}
+
+@media (min-width: 500px) and (max-width: 660px) 
+{
+    .job_search_grand_container
+{
+  width: 100%;
+}
+
+.job-search-container {
+    width: 98%;
+    height: 5vh;
+}
+
+    select {
+
+        font-size: 0.75rem;
+    }
+
+    button.search-btn
+    {
+        font-size: 0.75rem;
+    }
+
+}    
+
+@media (min-width: 660px) and (max-width: 815px) 
+{
+
+    .job_search_grand_container
+    {
+      width: 100%;
+    }
+    
+    .job-search-container {
+        width: 98%;
+        height: 5vh;
+    }
+
+    select {
+
+        font-size: 0.85rem;
+    }
+
+    button.search-btn
+    {
+        font-size: 0.85rem;
+    }
+
+}
+
+
+@media (min-width: 815px) and (max-width: 990px) 
+{
+
+    
+    .job_search_grand_container
+    {
+      width: 80%;
+    }
+    
+    .job-search-container 
+    {
+        width: 99%;
+        height: 12vh;
+    }
+
+    input[type="text"] 
+  {
+
+    height: 6vh;
+
+  }
+    
+
+    select {
+
+        font-size: 0.95rem;
+        height: 6vh;
+    }
+
+    button.search-btn
+    {
+        font-size: 0.95rem;
+        height: 6vh;
+    }
+
+}
+
+
+@media (min-width: 990px) and (max-width: 1204.98px)
+ {
+
+    .job_search_grand_container
+    {
+      width: 70%;
+    }
+    
+    .job-search-container 
+    {
+        width: 98%;
+        height: 11vh;
+    }
+
+
+    input[type="text"] 
+    {
+        padding: 0.35em;
+        font-size: 0.95rem;
+        flex: 1;
+        width: 25rem;
+    }
+    
+
+
+    button.search-btn {
+        font-size: 0.95rem;
+    }
+
+    .job-list 
+    {
+        font-size: 1rem;
+    }
+   
+  }
+
+  // Large Desktop (XXL devices, 1200px and up)
+@media (min-width: 1200px) {
+    // Your large desktop styles here
+
+    .job_search_grand_container
+    {
+      width: 60%;
+    }
+    
+    .job-search-container 
+    {
+        width: 98%;
+        height: 11vh;
+    }
+
+
+    input[type="text"] 
+    {
+        padding: 0.35em;
+        font-size: 0.95rem;
+        flex: 1;
+        width: 25rem;
+    }
+    
+
+
+    button.search-btn {
+        font-size: 0.95rem;
+    }
+
+    .job-list 
+    {
+        font-size: 1rem;
+    }
+
+  }

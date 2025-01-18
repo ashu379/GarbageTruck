@@ -1,0 +1,51 @@
+.testimonial-slider {
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.testimonial-image-container {
+  margin-bottom: 15px;
+}
+
+.testimonial-image {
+  width: 80px; /* Set the size of the image */
+  height: 80px;
+  border-radius: 50%; /* This will make the image rounded */
+  object-fit: cover; /* Ensures the image doesn't stretch */
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.testimonial-author {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-rating {
+  margin-top: 2rem;
+  position: relative;
+  bottom: 3rem;
+  right: 0rem;
+  z-index: 2;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.star.filled {
+  color: #ffd700;
+}
+
+.testimonial-rating .star {
+  margin-right: 0rem; /* Different margin for the first star */
+}

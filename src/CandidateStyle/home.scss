@@ -1,0 +1,26 @@
+.job-list {
+  padding: 40px;
+  margin-top: 8rem;
+}
+.job-list h1,
+.job-list p {
+  margin-right: 2rem;
+}
+
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.job-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.job-rating {
+  display: flex;
+  justify-content: center;
+}
+
+

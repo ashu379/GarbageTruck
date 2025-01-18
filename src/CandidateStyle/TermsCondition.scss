@@ -1,0 +1,38 @@
+main {
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    >p
+    {
+        text-align: left !important;
+    }
+}
+h1, h2 {
+    color: #333;
+    margin: 1em;
+}
+section {
+    margin-bottom: 20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #555;
+}
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+main p
+{
+    text-align: left !important;
+}

@@ -1,0 +1,19 @@
+/* src/components/Preloader.css */
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    overflow: hidden;
+  }
+  
+  .preloader-video {
+    width: 10%; /* Adjust the size of the video */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100vw; /* Prevent overflow */
+    object-fit: cover; /* Cover the container */
+    margin: auto;
+    
+  }
+  

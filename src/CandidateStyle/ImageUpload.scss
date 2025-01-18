@@ -1,0 +1,106 @@
+// ImageUpload.scss
+@import 'colors';
+
+.parent_upload
+{
+  border: 1px solid $first;
+  width: 70%;
+  height: 20vh;
+  margin: auto;
+  padding: 0.45em;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+.upload_container
+{
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 0.85em;
+}
+
+.image-upload {
+    display: flex;
+    position: relative;
+    top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.85em;
+    width: 100%;
+  }
+  
+  .upload-button {
+    background-color: $third;
+    color: #fff;
+    padding: 6px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    height: 2rem;
+    width: 120%;
+    z-index: 9;
+  }
+  
+
+  
+  .image-preview {
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $second;
+    position: absolute;
+    bottom: 1rem;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // Mobile (Small devices, 0px and up)
+@media (max-width: 575.98px) {
+  // Your mobile styles here
+
+  .parent_upload
+{
+  width: 35%;
+  height:10rem;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  // Your tablet styles here
+
+  .parent_upload
+  {
+    width: 20%;
+    height:10rem;
+  }
+
+}  
+
+// Small Desktop (Large devices, 768px and up)
+@media (min-width: 768px) and (max-width: 997px) {
+  // Your small desktop styles here
+
+  .parent_upload
+  {
+    width: 26%;
+    height:10rem;
+  }
+
+}
+  

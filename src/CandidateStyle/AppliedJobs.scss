@@ -1,0 +1,42 @@
+.Candidate_Applied_container
+{
+    width: 100%;
+}
+
+// Mobile (Small devices, 0px and up)
+@media (max-width: 575.98px) {
+    // Your mobile styles here
+
+ .Candidate_Applied_container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}  
+
+
+// Tablet (Medium devices, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    // Your tablet styles here
+
+    .Candidate_Applied_container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}   
+
+// Small Desktop (Large devices, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    // Your small desktop styles here
+
+    .Candidate_Applied_container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,146 @@
+@import "colors";
+
+.icon_2 {
+  size: 30;
+}
+
+
+.dashboard_container
+{
+  display: flex;
+  justify-content: center;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.dashborad_header {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  margin-left: 1em;
+  padding: 1em;
+}
+
+.dashboard_boxs {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.25em;
+  height: 50vh;
+
+
+
+  > .box {   
+    display: flex;
+    color: $first;
+    font-size: 1.2rem;
+    font-weight: 100;
+    justify-content: space-between;
+    align-items: center;
+    width: 44%;
+    height: 20vh;
+    outline: none;
+    border-radius: 10px;
+    padding: 1em;
+  }
+
+  #boxpostjobs {
+    background-image: linear-gradient(to bottom right, #223a14, #a2c80d);
+
+    > span {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      > p {
+        color: $first;
+      }
+    }
+  }
+
+  #totalapplied {
+    background-image: linear-gradient(to bottom right, #d2d81a, #0ddd79);
+
+    > span 
+    p {
+      color: $first;
+    }
+  }
+}
+
+.counter p {
+  font-size: 2rem;
+}
+
+
+@media screen and (min-width: 567px) and (max-width: 768.98px)
+{
+
+  .dashboard_container
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .dashboard_boxs {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: space-around;
+    padding: 0;
+
+    >.box {   
+      width: 86%;
+      height: 30vh;
+      margin: 1em;
+    }
+  
+  }
+
+}
+
+
+
+
+
+// small laptop screen ↓ ↓ ↓ ↓
+@media screen and (min-width: 768px) and (max-width: 997px) {
+  
+  .dashboard_container
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .dashboard_boxs {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: space-around;
+    padding: 0;
+
+    >.box {   
+      width: 90%;
+      height: 30vh;
+      margin: 1em;
+    }
+  
+  }  
+
+ 
+}
+// small laptop screen ↑ ↑ ↑ ↑
+
+
+
+
+
+
+
+@media only screen and (min-width:997px) and (max-width: 1200px) 
+{
+   
+}

@@ -1,0 +1,200 @@
+@import "colors";
+
+// button transform code
+
+h6
+{
+  color: rgb(58, 58, 58);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.slide_button
+{
+  background-color:$third;
+  border: 1px solid white;
+
+  &:hover
+  {
+    background-color: $forth;
+  }
+}
+
+.blur_click {
+  border: none;
+  display: inline-block;
+  transform: skew(0deg);
+  transition: all 1s;
+}
+
+.blur_click span {
+  display: inline-block;
+  position: relative;
+  right: 0.55em;
+  transform: skew(0deg);
+}
+
+.blur_click::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background-color: #efeef4ab;
+  opacity: 0;
+  z-index: -1;
+  transition: all 1s;
+  border-radius: 10px;
+}
+
+.blur_click:hover {
+  color: #2e2a2a;
+  background-color: rgba(114, 114, 114, 0.332);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.blur_click:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+// button transform code
+
+.sign_btn {
+  background-color: #efeef4;
+  border: 1px solid $third;
+  color: $text;
+  border-radius: 10px;
+}
+
+.pop_header {
+  text-align: center;
+  border-top: 4px solid $third;
+  padding-top: 0.45em;
+
+  > h2 {
+    margin-top: 1em;
+  }
+}
+
+p {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1em;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.toggle-divs {
+  .buttons {
+    width: 70%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1em;
+
+    button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: $first;
+      color: $third;
+      font-size: 1rem;
+      border: 1px solid $third;
+
+      &.active {
+        background-color: $third;
+        color: $first;
+      }
+    }
+  }
+
+  .content {
+    .first-div,
+    .second-div {
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+
+      > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1em;
+
+        > input {
+          width: 100%;
+          padding: 0.65em;
+          color: rgb(49, 44, 44);
+          border-radius: 8px;
+          outline: none;
+          border: none;
+          background-color: #e8e8e8b6;
+          text-indent: 10px;
+          font-size: 0.95rem;
+        }
+
+        > span {
+          margin-left: 0.45em;
+          margin-top: 0;
+          font-size: 0.76rem;
+
+          > p {
+            color: rgb(75, 75, 75);
+          }
+
+          > #checkbox {
+            margin: 0.65em;
+            padding: 1em;
+            margin-top: 1em;
+          }
+
+          .already_para {
+            margin-left: 2em;
+          }
+        }
+
+        > input::placeholder {
+          color: $text;
+        }
+      }
+
+      .or {
+        display: block;
+        color: rgb(24, 24, 24);
+        text-align: center;
+        margin-top: 0.95rem;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      .signup_bottom_link {
+        display: flex;
+        justify-content: center;
+      }
+      .circle {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #4285f4; // Google blue color for the border
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4285f4; // Icon color to match the border
+        padding: 0.15em;
+
+        &:hover {
+          cursor: pointer;
+          color: $text;
+        }
+
+        .google-icon {
+          font-size: 40px; // Size of the Google icon
+        }
+      }
+    }
+  }
+}
